@@ -1,0 +1,55 @@
+{
+  "region": "Gale Crater / Mount Sharp (Aeolis Mons), Mars",
+  "crs": "Mars 2000 sphere (R = 3396190 m), planetocentric latitude, east-positive longitude, equirectangular; same grid convention as data/mola and data/ctx",
+  "bounds": {
+    "south": -7,
+    "north": -3.5,
+    "west": 136,
+    "east": 139.5
+  },
+  "bounds_note": "Pixel-edge bounds: target box snapped to whole pixels of the zoom grid. Row 0 = north edge, col 0 = west edge.",
+  "files": {
+    "gale_themis_day_ir.png": {
+      "kind": "THEMIS day IR controlled mosaic, 8-bit greyscale PNG; VISUAL layer, brightness is not Kelvin",
+      "layer": "THEMIS_DayIR_ControlledMosaics_100m_v2_oct2018",
+      "zoom": 8,
+      "width": 1274,
+      "height": 1275,
+      "pixels_per_degree": 364.0889,
+      "metres_per_pixel": 162.8,
+      "bounds": {
+        "south": -7.001038,
+        "north": -3.499146,
+        "west": 135.999756,
+        "east": 139.498901
+      },
+      "pixel_lat_deg": "-3.499146 - (row + 0.5) / 364.088889",
+      "pixel_lon_deg": "135.999756 + (col + 0.5) / 364.088889",
+      "tiles_used": 36,
+      "broken_tiles": 0,
+      "bytes": 1032027
+    },
+    "gale_themis_night_ir.png": {
+      "kind": "THEMIS night IR controlled mosaic, 8-bit greyscale PNG; VISUAL layer, brightness is not Kelvin",
+      "layer": "THEMIS_NightIR_ControlledMosaics_100m_v2_oct2018",
+      "zoom": 8,
+      "width": 1274,
+      "height": 1275,
+      "pixels_per_degree": 364.0889,
+      "metres_per_pixel": 162.8,
+      "bounds": {
+        "south": -7.001038,
+        "north": -3.499146,
+        "west": 135.999756,
+        "east": 139.498901
+      },
+      "pixel_lat_deg": "-3.499146 - (row + 0.5) / 364.088889",
+      "pixel_lon_deg": "135.999756 + (col + 0.5) / 364.088889",
+      "tiles_used": 36,
+      "broken_tiles": 0,
+      "bytes": 1101615
+    }
+  },
+  "source_native_resolution_m": 100,
+  "accessed": "2026-11-14"
+}

@@ -1,0 +1,16 @@
+{
+  "region": "Gale Crater / Mount Sharp (Aeolis Mons), Mars",
+  "crs": "Mars 2000 sphere (R = 3396190 m), planetocentric latitude, east-positive longitude; same as data/mola/bounds.json",
+  "bounds": { "south": -7.0, "north": -3.5, "west": 136.0, "east": 139.5 },
+  "files": {
+    "boxwork_area.geojson": {
+      "kind": "derived/approximate, NOT an official boundary: 2 polygons [lon, lat]",
+      "polygons": {
+        "rover_traverse_hull": { "bounds": { "south": -4.8107, "north": -4.7974, "west": 137.3791, "east": 137.3867 }, "source": "convex hull of ROVER poses sol 4534-4845, data/curiosity-traverse/gale_traverse.csv" },
+        "orbital_belt_box": { "bounds": { "south": -5.0506, "north": -4.7193, "west": 137.2367, "east": 137.4415 }, "source": "data/boxwork/README.md section 8.B, merged HiRISE strip footprints" }
+      }
+    },
+    "drill_sites.geojson": { "kind": "4 drill sites as Points [lon, lat]; Altadena has geometry null (sol not given in README, position not verified)" }
+  },
+  "accessed": "2026-11-14"
+}

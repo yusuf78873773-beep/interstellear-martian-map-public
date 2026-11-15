@@ -1,0 +1,324 @@
+{
+  "region": "Gale Crater / Mount Sharp, Mars (CRISM targeted observations near the boxwork belt)",
+  "crs": "Mars 2000 sphere (R = 3396190 m), planetocentric latitude, east-positive longitude; map-projected browse images. Bounds are the ODE footprint bounds from gale_mtrdr_products.csv; each image width/height matches (east-west)*px_per_deg and (north-south)*px_per_deg to within 1 px (checked).",
+  "files": {
+    "browse/frt000058a3_07_brphyj_mtr3.png": {
+      "product": "frt000058a3_07_if165j_mtr3",
+      "browse_product": "PHY_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "D2300",
+        "D2200",
+        "BD1900R2"
+      ],
+      "date": "2007-04-22",
+      "bounds": {
+        "south": -4.9091,
+        "north": -4.6862,
+        "west": 137.3242,
+        "east": 137.5634
+      },
+      "map_resolution_px_per_deg": 3293,
+      "approx_m_per_px": 18,
+      "target_comment": "7034 MSL Site f - Gale Crater",
+      "bytes": 338715,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=frt000058a3_07_if165j_mtr3&product_idGeo=47360923"
+    },
+    "browse/frt000058a3_07_brhydj_mtr3.png": {
+      "product": "frt000058a3_07_if165j_mtr3",
+      "browse_product": "HYD_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "SINDEX2",
+        "BD2100_2",
+        "BD1900_2"
+      ],
+      "date": "2007-04-22",
+      "bounds": {
+        "south": -4.9091,
+        "north": -4.6862,
+        "west": 137.3242,
+        "east": 137.5634
+      },
+      "map_resolution_px_per_deg": 3293,
+      "approx_m_per_px": 18,
+      "target_comment": "7034 MSL Site f - Gale Crater",
+      "bytes": 492404,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=frt000058a3_07_if165j_mtr3&product_idGeo=47360923"
+    },
+    "browse/frt000058a3_07_brhysj_mtr3.png": {
+      "product": "frt000058a3_07_if165j_mtr3",
+      "browse_product": "HYS_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "MIN2250",
+        "BD2250",
+        "BD1900R2"
+      ],
+      "date": "2007-04-22",
+      "bounds": {
+        "south": -4.9091,
+        "north": -4.6862,
+        "west": 137.3242,
+        "east": 137.5634
+      },
+      "map_resolution_px_per_deg": 3293,
+      "approx_m_per_px": 18,
+      "target_comment": "7034 MSL Site f - Gale Crater",
+      "bytes": 667060,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=frt000058a3_07_if165j_mtr3&product_idGeo=47360923"
+    },
+    "browse/frt0000b6f1_07_brphyj_mtr3.png": {
+      "product": "frt0000b6f1_07_if165j_mtr3",
+      "browse_product": "PHY_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "D2300",
+        "D2200",
+        "BD1900R2"
+      ],
+      "date": "2008-07-09",
+      "bounds": {
+        "south": -4.9101,
+        "north": -4.6933,
+        "west": 137.3011,
+        "east": 137.5364
+      },
+      "map_resolution_px_per_deg": 3293,
+      "approx_m_per_px": 18,
+      "target_comment": "Layers and channel on slope of Gale Crater mound in MOC M03-01521",
+      "bytes": 429854,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=frt0000b6f1_07_if165j_mtr3&product_idGeo=47364783"
+    },
+    "browse/frt0000b6f1_07_brhydj_mtr3.png": {
+      "product": "frt0000b6f1_07_if165j_mtr3",
+      "browse_product": "HYD_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "SINDEX2",
+        "BD2100_2",
+        "BD1900_2"
+      ],
+      "date": "2008-07-09",
+      "bounds": {
+        "south": -4.9101,
+        "north": -4.6933,
+        "west": 137.3011,
+        "east": 137.5364
+      },
+      "map_resolution_px_per_deg": 3293,
+      "approx_m_per_px": 18,
+      "target_comment": "Layers and channel on slope of Gale Crater mound in MOC M03-01521",
+      "bytes": 692339,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=frt0000b6f1_07_if165j_mtr3&product_idGeo=47364783"
+    },
+    "browse/frt0000b6f1_07_brhysj_mtr3.png": {
+      "product": "frt0000b6f1_07_if165j_mtr3",
+      "browse_product": "HYS_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "MIN2250",
+        "BD2250",
+        "BD1900R2"
+      ],
+      "date": "2008-07-09",
+      "bounds": {
+        "south": -4.9101,
+        "north": -4.6933,
+        "west": 137.3011,
+        "east": 137.5364
+      },
+      "map_resolution_px_per_deg": 3293,
+      "approx_m_per_px": 18,
+      "target_comment": "Layers and channel on slope of Gale Crater mound in MOC M03-01521",
+      "bytes": 460085,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=frt0000b6f1_07_if165j_mtr3&product_idGeo=47364783"
+    },
+    "browse/hrl0000baba_07_brphyj_mtr3.png": {
+      "product": "hrl0000baba_07_if182j_mtr3",
+      "browse_product": "PHY_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "D2300",
+        "D2200",
+        "BD1900R2"
+      ],
+      "date": "2008-07-20",
+      "bounds": {
+        "south": -4.9982,
+        "north": -4.5988,
+        "west": 137.2967,
+        "east": 137.5542
+      },
+      "map_resolution_px_per_deg": 1646.5,
+      "approx_m_per_px": 36,
+      "target_comment": "Layers and channel on slope of Gale Crater mound in MOC M03-01521",
+      "bytes": 244967,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=hrl0000baba_07_if182j_mtr3&product_idGeo=47364941"
+    },
+    "browse/hrl0000baba_07_brhydj_mtr3.png": {
+      "product": "hrl0000baba_07_if182j_mtr3",
+      "browse_product": "HYD_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "SINDEX2",
+        "BD2100_2",
+        "BD1900_2"
+      ],
+      "date": "2008-07-20",
+      "bounds": {
+        "south": -4.9982,
+        "north": -4.5988,
+        "west": 137.2967,
+        "east": 137.5542
+      },
+      "map_resolution_px_per_deg": 1646.5,
+      "approx_m_per_px": 36,
+      "target_comment": "Layers and channel on slope of Gale Crater mound in MOC M03-01521",
+      "bytes": 350652,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=hrl0000baba_07_if182j_mtr3&product_idGeo=47364941"
+    },
+    "browse/hrl0000baba_07_brhysj_mtr3.png": {
+      "product": "hrl0000baba_07_if182j_mtr3",
+      "browse_product": "HYS_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "MIN2250",
+        "BD2250",
+        "BD1900R2"
+      ],
+      "date": "2008-07-20",
+      "bounds": {
+        "south": -4.9982,
+        "north": -4.5988,
+        "west": 137.2967,
+        "east": 137.5542
+      },
+      "map_resolution_px_per_deg": 1646.5,
+      "approx_m_per_px": 36,
+      "target_comment": "Layers and channel on slope of Gale Crater mound in MOC M03-01521",
+      "bytes": 244534,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=hrl0000baba_07_if182j_mtr3&product_idGeo=47364941"
+    },
+    "browse/hrl0001233b_07_brphyj_mtr3.png": {
+      "product": "hrl0001233b_07_if183j_mtr3",
+      "browse_product": "PHY_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "D2300",
+        "D2200",
+        "BD1900R2"
+      ],
+      "date": "2009-04-23",
+      "bounds": {
+        "south": -5.1283,
+        "north": -4.5721,
+        "west": 137.0882,
+        "east": 137.4225
+      },
+      "map_resolution_px_per_deg": 1646.5,
+      "approx_m_per_px": 36,
+      "target_comment": "34586 Sulfate and clay strata in Gale Crater Sedimentary/Layering Processes",
+      "bytes": 113371,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=hrl0001233b_07_if183j_mtr3&product_idGeo=47367024"
+    },
+    "browse/hrl0001233b_07_brhydj_mtr3.png": {
+      "product": "hrl0001233b_07_if183j_mtr3",
+      "browse_product": "HYD_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "SINDEX2",
+        "BD2100_2",
+        "BD1900_2"
+      ],
+      "date": "2009-04-23",
+      "bounds": {
+        "south": -5.1283,
+        "north": -4.5721,
+        "west": 137.0882,
+        "east": 137.4225
+      },
+      "map_resolution_px_per_deg": 1646.5,
+      "approx_m_per_px": 36,
+      "target_comment": "34586 Sulfate and clay strata in Gale Crater Sedimentary/Layering Processes",
+      "bytes": 475159,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=hrl0001233b_07_if183j_mtr3&product_idGeo=47367024"
+    },
+    "browse/hrl0001233b_07_brhysj_mtr3.png": {
+      "product": "hrl0001233b_07_if183j_mtr3",
+      "browse_product": "HYS_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "MIN2250",
+        "BD2250",
+        "BD1900R2"
+      ],
+      "date": "2009-04-23",
+      "bounds": {
+        "south": -5.1283,
+        "north": -4.5721,
+        "west": 137.0882,
+        "east": 137.4225
+      },
+      "map_resolution_px_per_deg": 1646.5,
+      "approx_m_per_px": 36,
+      "target_comment": "34586 Sulfate and clay strata in Gale Crater Sedimentary/Layering Processes",
+      "bytes": 183810,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=hrl0001233b_07_if183j_mtr3&product_idGeo=47367024"
+    },
+    "browse/frt0001bba1_07_brphyj_mtr3.png": {
+      "product": "frt0001bba1_07_if165j_mtr3",
+      "browse_product": "PHY_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "D2300",
+        "D2200",
+        "BD1900R2"
+      ],
+      "date": "2010-11-06",
+      "bounds": {
+        "south": -4.9231,
+        "north": -4.7169,
+        "west": 137.161,
+        "east": 137.3915
+      },
+      "map_resolution_px_per_deg": 3293,
+      "approx_m_per_px": 18,
+      "target_comment": "Likely sulfate and clay-bearing strata in NW Gale Crater",
+      "bytes": 391577,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=frt0001bba1_07_if165j_mtr3&product_idGeo=47370224"
+    },
+    "browse/frt0001bba1_07_brhydj_mtr3.png": {
+      "product": "frt0001bba1_07_if165j_mtr3",
+      "browse_product": "HYD_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "SINDEX2",
+        "BD2100_2",
+        "BD1900_2"
+      ],
+      "date": "2010-11-06",
+      "bounds": {
+        "south": -4.9231,
+        "north": -4.7169,
+        "west": 137.161,
+        "east": 137.3915
+      },
+      "map_resolution_px_per_deg": 3293,
+      "approx_m_per_px": 18,
+      "target_comment": "Likely sulfate and clay-bearing strata in NW Gale Crater",
+      "bytes": 583716,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=frt0001bba1_07_if165j_mtr3&product_idGeo=47370224"
+    },
+    "browse/frt0001bba1_07_brhysj_mtr3.png": {
+      "product": "frt0001bba1_07_if165j_mtr3",
+      "browse_product": "HYS_BROWSE_PRODUCT",
+      "band_names_in_label_order": [
+        "MIN2250",
+        "BD2250",
+        "BD1900R2"
+      ],
+      "date": "2010-11-06",
+      "bounds": {
+        "south": -4.9231,
+        "north": -4.7169,
+        "west": 137.161,
+        "east": 137.3915
+      },
+      "map_resolution_px_per_deg": 3293,
+      "approx_m_per_px": 18,
+      "target_comment": "Likely sulfate and clay-bearing strata in NW Gale Crater",
+      "bytes": 583624,
+      "ode_files_page": "https://ode.rsl.wustl.edu/mars/productfiles.aspx?product_id=frt0001bba1_07_if165j_mtr3&product_idGeo=47370224"
+    }
+  },
+  "total_bytes": 6251867,
+  "note": "Browse images are 3-band colour composites (RGBA PNG), not single parameter maps. Band order in the label is listed; the mapping of bands to R/G/B was not verified. No hyperspectral I/F cubes were downloaded.",
+  "accessed": "2026-11-14"
+}

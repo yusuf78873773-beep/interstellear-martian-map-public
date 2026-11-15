@@ -1,0 +1,36 @@
+{
+  "region": "Gale Crater / Mount Sharp (Aeolis Mons), Mars",
+  "crs": "Mars 2000 geographic, planetocentric latitude, east-positive longitude (0-360 E == -180..180 here), equirectangular, sphere R = 3396190 m",
+  "requested_bounds": { "south": -6.0, "north": -3.5, "west": 136.5, "east": 138.5 },
+  "bounds": { "south": -7.0, "north": -3.5, "west": 136.0, "east": 139.5 },
+  "bounds_note": "Requested box was widened: the crater (centre ~5.4 S, 137.8 E, ~154 km wide) has its south rim near -6.5..-6.8 and east rim near 139.0..139.3, both outside the requested box. Checked on the DEM profiles.",
+  "files": {
+    "gale_mola_clrshade.png": {
+      "kind": "colour shaded relief (visual only, no elevation values)",
+      "width": 637,
+      "height": 637,
+      "pixels_per_degree": 182.0444,
+      "metres_per_pixel_approx": 326,
+      "bounds": { "south": -6.99829, "north": -3.49915, "west": 135.99976, "east": 139.49890 },
+      "bounds_note": "Pixel-edge bounds after cropping to whole pixels of the zoom-7 tile grid (within 0.002 deg of the target box)."
+    },
+    "gale_mola_dem.tif": {
+      "kind": "elevation, GeoTIFF, int16, metres relative to the MOLA areoid",
+      "width": 448,
+      "height": 448,
+      "pixels_per_degree": 128,
+      "metres_per_pixel": 463.0935,
+      "nodata": -32768,
+      "bounds": { "south": -7.0, "north": -3.5, "west": 136.0, "east": 139.5 }
+    },
+    "gale_mola_dem_int16le.bin": {
+      "kind": "same elevation grid as the GeoTIFF, raw little-endian int16, row-major, first row = north edge, first column = west edge",
+      "width": 448,
+      "height": 448,
+      "pixel_lat_deg": "north - (row + 0.5) / 128",
+      "pixel_lon_deg": "west + (col + 0.5) / 128"
+    }
+  },
+  "elevation_stats_m": { "min": -4607, "max": 1347, "min_at": { "lat": -4.770, "lon": 136.840 } },
+  "created": "2026-11-14"
+}

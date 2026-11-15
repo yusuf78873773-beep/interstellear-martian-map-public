@@ -1,0 +1,387 @@
+{
+  "region": "Gale Crater / Mount Sharp (Aeolis Mons), Mars",
+  "crs": "Mars 2000 sphere (GCS_Mars_2000_Sphere, R = 3396190 m), planetocentric latitude, east-positive longitude, equirectangular; same grid convention as data/mola",
+  "bounds": {
+    "south": -7,
+    "north": -3.5,
+    "west": 136,
+    "east": 139.5
+  },
+  "bounds_note": "Same box as data/mola/bounds.json so the layers overlay.",
+  "files": {
+    "gale_ctx_overview.png": {
+      "kind": "8-bit greyscale CTX photo mosaic (visual only)",
+      "zoom": 8,
+      "width": 2549,
+      "height": 2548,
+      "pixels_per_degree": 728.1778,
+      "metres_per_pixel": 81.4,
+      "bounds": {
+        "south": -6.999664,
+        "north": -3.500519,
+        "west": 135.999756,
+        "east": 139.500275
+      },
+      "pixel_lat_deg": "-3.500519 - (row + 0.5) / 728.177778",
+      "pixel_lon_deg": "135.999756 + (col + 0.5) / 728.177778",
+      "bounds_note": "Pixel-edge bounds: the target box snapped to whole pixels of the zoom grid. Row 0 = north edge, col 0 = west edge.",
+      "tiles_used": 36,
+      "tiles_replaced": 0
+    },
+    "gale_ctx_detail_sharp_base.png": {
+      "kind": "8-bit greyscale CTX photo mosaic (visual only), Mount Sharp base and Curiosity landing site",
+      "zoom": 12,
+      "width": 3932,
+      "height": 3931,
+      "pixels_per_degree": 11650.8444,
+      "metres_per_pixel": 5.09,
+      "bounds": {
+        "south": -4.857416,
+        "north": -4.520016,
+        "west": 137.269964,
+        "east": 137.60745
+      },
+      "pixel_lat_deg": "-4.520016 - (row + 0.5) / 11650.844444",
+      "pixel_lon_deg": "137.269964 + (col + 0.5) / 11650.844444",
+      "bounds_note": "Pixel-edge bounds: the target box snapped to whole pixels of the zoom grid. Row 0 = north edge, col 0 = west edge.",
+      "target": "about 20 x 20 km, north-west corner at -4.52 / 137.27 E",
+      "contains": {
+        "curiosity_landing_bradbury": {
+          "lat": -4.5895,
+          "lon": 137.4417,
+          "pixel": {
+            "row": 809,
+            "col": 2000
+          }
+        }
+      },
+      "tiles_used": 81,
+      "tiles_replaced": 16,
+      "replaced_area_fraction": 0.195,
+      "replaced_note": "These zoom-12 tiles are broken on the server (the PNG does not decode, and the bytes that do decode belong to another image). Their area was filled from the zoom-11 parent tile, upsampled 2x (real CTX data at 10.18 m/px, shown at 5.09 m/px).",
+      "replaced_tiles": [
+        {
+          "tile": "12/2150/7220",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.52637,
+            "north": -4.52,
+            "west": 137.28516,
+            "east": 137.3291
+          }
+        },
+        {
+          "tile": "12/2150/7222",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.52637,
+            "north": -4.52,
+            "west": 137.37305,
+            "east": 137.41699
+          }
+        },
+        {
+          "tile": "12/2150/7223",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.52637,
+            "north": -4.52,
+            "west": 137.41699,
+            "east": 137.46094
+          }
+        },
+        {
+          "tile": "12/2151/7220",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.57031,
+            "north": -4.52637,
+            "west": 137.28516,
+            "east": 137.3291
+          }
+        },
+        {
+          "tile": "12/2151/7221",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.57031,
+            "north": -4.52637,
+            "west": 137.3291,
+            "east": 137.37305
+          }
+        },
+        {
+          "tile": "12/2152/7220",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.61426,
+            "north": -4.57031,
+            "west": 137.28516,
+            "east": 137.3291
+          }
+        },
+        {
+          "tile": "12/2152/7221",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.61426,
+            "north": -4.57031,
+            "west": 137.3291,
+            "east": 137.37305
+          }
+        },
+        {
+          "tile": "12/2153/7220",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.6582,
+            "north": -4.61426,
+            "west": 137.28516,
+            "east": 137.3291
+          }
+        },
+        {
+          "tile": "12/2153/7221",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.6582,
+            "north": -4.61426,
+            "west": 137.3291,
+            "east": 137.37305
+          }
+        },
+        {
+          "tile": "12/2154/7220",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.70215,
+            "north": -4.6582,
+            "west": 137.28516,
+            "east": 137.3291
+          }
+        },
+        {
+          "tile": "12/2154/7222",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.70215,
+            "north": -4.6582,
+            "west": 137.37305,
+            "east": 137.41699
+          }
+        },
+        {
+          "tile": "12/2154/7223",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.70215,
+            "north": -4.6582,
+            "west": 137.41699,
+            "east": 137.46094
+          }
+        },
+        {
+          "tile": "12/2157/7226",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.83398,
+            "north": -4.79004,
+            "west": 137.54883,
+            "east": 137.59277
+          }
+        },
+        {
+          "tile": "12/2157/7227",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.83398,
+            "north": -4.79004,
+            "west": 137.59277,
+            "east": 137.60741
+          }
+        },
+        {
+          "tile": "12/2158/7226",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.85741,
+            "north": -4.83398,
+            "west": 137.54883,
+            "east": 137.59277
+          }
+        },
+        {
+          "tile": "12/2158/7227",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.85741,
+            "north": -4.83398,
+            "west": 137.59277,
+            "east": 137.60741
+          }
+        }
+      ]
+    },
+    "gale_ctx_detail_boxwork.png": {
+      "kind": "8-bit greyscale CTX photo mosaic (visual only), HiRISE boxwork belt envelope (data/boxwork/README.md section 8.B)",
+      "zoom": 12,
+      "width": 2387,
+      "height": 3860,
+      "pixels_per_degree": 11650.8444,
+      "metres_per_pixel": 5.09,
+      "bounds": {
+        "south": -5.050621,
+        "north": -4.719315,
+        "west": 137.236662,
+        "east": 137.44154
+      },
+      "pixel_lat_deg": "-4.719315 - (row + 0.5) / 11650.844444",
+      "pixel_lon_deg": "137.236662 + (col + 0.5) / 11650.844444",
+      "bounds_note": "Pixel-edge bounds: target box snapped to whole pixels of the zoom grid. Row 0 = north edge, col 0 = west edge.",
+      "tiles_used": 48,
+      "tiles_replaced": 11,
+      "replaced_area_fraction": 0.23,
+      "replaced_note": "These zoom-12 tiles are broken on the server (PNG does not decode). Their area was filled from the zoom-11 parent tile, upsampled 2x (real CTX data at 10.18 m/px shown at 5.09 m/px).",
+      "replaced_tiles": [
+        {
+          "tile": "12/2159/7220",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -4.92188,
+            "north": -4.87793,
+            "west": 137.28516,
+            "east": 137.3291
+          }
+        },
+        {
+          "tile": "12/2161/7218",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -5.00977,
+            "north": -4.96582,
+            "west": 137.2367,
+            "east": 137.24121
+          }
+        },
+        {
+          "tile": "12/2161/7219",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -5.00977,
+            "north": -4.96582,
+            "west": 137.24121,
+            "east": 137.28516
+          }
+        },
+        {
+          "tile": "12/2161/7220",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -5.00977,
+            "north": -4.96582,
+            "west": 137.28516,
+            "east": 137.3291
+          }
+        },
+        {
+          "tile": "12/2161/7223",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -5.00977,
+            "north": -4.96582,
+            "west": 137.41699,
+            "east": 137.4415
+          }
+        },
+        {
+          "tile": "12/2162/7218",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -5.0506,
+            "north": -5.00977,
+            "west": 137.2367,
+            "east": 137.24121
+          }
+        },
+        {
+          "tile": "12/2162/7219",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -5.0506,
+            "north": -5.00977,
+            "west": 137.24121,
+            "east": 137.28516
+          }
+        },
+        {
+          "tile": "12/2162/7220",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -5.0506,
+            "north": -5.00977,
+            "west": 137.28516,
+            "east": 137.3291
+          }
+        },
+        {
+          "tile": "12/2162/7221",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -5.0506,
+            "north": -5.00977,
+            "west": 137.3291,
+            "east": 137.37305
+          }
+        },
+        {
+          "tile": "12/2162/7222",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -5.0506,
+            "north": -5.00977,
+            "west": 137.37305,
+            "east": 137.41699
+          }
+        },
+        {
+          "tile": "12/2162/7223",
+          "filled_from_zoom": 11,
+          "effective_metres_per_pixel": 10.18,
+          "bounds": {
+            "south": -5.0506,
+            "north": -5.00977,
+            "west": 137.41699,
+            "east": 137.4415
+          }
+        }
+      ]
+    }
+  },
+  "created": "2026-11-14"
+}

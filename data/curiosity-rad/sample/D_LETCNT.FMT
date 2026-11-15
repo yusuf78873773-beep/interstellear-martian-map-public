@@ -1,0 +1,20 @@
+/* D_LETCNT.FMT */                                                            
+/* This file defines the structure of the Cnt part of Dosimetry LET  */       
+                                                                              
+ INTERCHANGE_FORMAT      = ASCII                                              
+ AXES                    = 1                                                  
+ AXIS_ITEMS              = (44)                                               
+ START_BYTE              = 1                                                  
+                                                                              
+  OBJECT           = ELEMENT                                                  
+    NAME           = DOSE_LET_CNT_COMPONENT_VALUE                             
+    START_BYTE     = 1                                                        
+    BYTES          = 13                                                       
+    DATA_TYPE      = ASCII_REAL                                               
+    UNIT           = "Counts"                                                 
+    DESCRIPTION    = "                                                        
+      Dosimetry LET counts                                                    
+      "                                                                       
+  END_OBJECT       = ELEMENT                                                  
+                                                                              
+ /* End of D_LETCNT.FMT */                                                    

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Martian Map: Gale Crater EVA Planner</title>
+  <meta name="description" content="Interactive map and EVA route planner for Gale Crater / Mount Sharp. NASA Space Apps 2026.">
+  <meta name="theme-color" content="#10151c">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Martian Map">
+  <meta property="og:title" content="Martian Map: Gale Crater EVA Planner">
+  <meta property="og:description" content="Interactive map and EVA route planner for Gale Crater / Mount Sharp, built from real NASA data. NASA Space Apps 2026, team Interstellear.">
+  <meta property="og:image" content="https://interstellear-martian-map.vercel.app/social.png">
+  <meta property="og:image:alt" content="Map of Gale Crater with the Curiosity route, drill sites and boxwork areas">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Martian Map: Gale Crater EVA Planner">
+  <meta name="twitter:description" content="Interactive map and EVA route planner for Gale Crater / Mount Sharp, built from real NASA data.">
+  <meta name="twitter:image" content="https://interstellear-martian-map.vercel.app/social.png">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#map">Skip to map</a>
+  <header class="topbar">
+    <div class="titles">
+      <h1 data-i18n="app.title">Martian Map: Gale Crater EVA Planner</h1>
+      <p data-i18n="app.subtitle"></p>
+    </div>
+    <div class="top-actions">
+      <button id="aboutBtn" type="button" data-i18n="btn.about">About &amp; limits</button>
+      <button id="langBtn" type="button" data-i18n-title="btn.lang.title" aria-label="Language">TR</button>
+    </div>
+  </header>
+
+  <div class="main">
+    <div id="map" tabindex="0" aria-label="Map of Gale Crater"></div>
+    <div id="readout" role="status" aria-live="polite"><span data-i18n="readout.hint"></span></div>
+    <div id="legend" hidden></div>
+    <div id="busy" hidden></div>
+
+    <aside id="panel" aria-label="Controls">
+      <button id="panelToggle" type="button" aria-expanded="true" aria-controls="panelBody" data-i18n="panel.toggle">Panel</button>
+      <div id="panelBody">
+        <div class="tabs" role="tablist">
+          <button role="tab" id="tabLayersBtn" aria-selected="true" aria-controls="tab-layers" data-tab="layers" data-i18n="tab.layers">Layers</button>
+          <button role="tab" id="tabRouteBtn" aria-selected="false" aria-controls="tab-route" data-tab="route" data-i18n="tab.route">Route</button>
+          <button role="tab" id="tabPhotosBtn" aria-selected="false" aria-controls="tab-photos" data-tab="photos" data-i18n="tab.photos">Photos</button>
+        </div>
+        <section id="tab-layers" role="tabpanel" aria-labelledby="tabLayersBtn"></section>
+        <section id="tab-route" role="tabpanel" aria-labelledby="tabRouteBtn" hidden></section>
+        <section id="tab-photos" role="tabpanel" aria-labelledby="tabPhotosBtn" hidden></section>
+      </div>
+    </aside>
+  </div>
+
+  <dialog id="infoDlg" aria-labelledby="infoTitle"></dialog>
+  <dialog id="aboutDlg" aria-labelledby="aboutTitle"></dialog>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <noscript>This app needs JavaScript.</noscript>
+</body>
+</html>

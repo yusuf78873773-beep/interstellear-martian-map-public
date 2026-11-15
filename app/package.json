@@ -1,0 +1,12 @@
+{
+  "name": "martian-map",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Interplanetary Survival Guide: Martian Map (Gale Crater / Mount Sharp) - static web app",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "test": "node tests/terrain.test.mjs && node tests/planner.test.mjs && node tests/context.test.mjs"
+  }
+}

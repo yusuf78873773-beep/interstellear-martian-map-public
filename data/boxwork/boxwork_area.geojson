@@ -1,0 +1,150 @@
+{
+ "type": "FeatureCollection",
+ "crs_note": "[longitude east, planetocentric latitude] degrees, Mars 2000 sphere (R = 3396190 m), not WGS84.",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       137.3791167,
+       -4.8063562
+      ],
+      [
+       137.3816142,
+       -4.8106802
+      ],
+      [
+       137.3826976,
+       -4.8095431
+      ],
+      [
+       137.3866627,
+       -4.797497
+      ],
+      [
+       137.3866276,
+       -4.7974336
+      ],
+      [
+       137.3866264,
+       -4.7974315
+      ],
+      [
+       137.3866222,
+       -4.7974257
+      ],
+      [
+       137.3866167,
+       -4.7974202
+      ],
+      [
+       137.3866081,
+       -4.7974158
+      ],
+      [
+       137.3865967,
+       -4.7974125
+      ],
+      [
+       137.3865796,
+       -4.7974103
+      ],
+      [
+       137.3865621,
+       -4.7974094
+      ],
+      [
+       137.3864956,
+       -4.7974073
+      ],
+      [
+       137.3843999,
+       -4.7984003
+      ],
+      [
+       137.3839045,
+       -4.7988648
+      ],
+      [
+       137.3804498,
+       -4.8025097
+      ],
+      [
+       137.3800195,
+       -4.8031981
+      ],
+      [
+       137.3792969,
+       -4.8047737
+      ],
+      [
+       137.3792632,
+       -4.8048629
+      ],
+      [
+       137.3792627,
+       -4.8048643
+      ],
+      [
+       137.3791167,
+       -4.8063562
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "name": "Curiosity traverse convex hull, sol 4534-4845",
+    "kind": "rover_traverse_hull",
+    "source": "data/curiosity-traverse/gale_traverse.csv (ROVER rows, sol 4534-4845)",
+    "sol_first_with_rows": 4534,
+    "sol_last_with_rows": 4845,
+    "input_points": 2641,
+    "hull_vertices": 20,
+    "uyari": "Yaklaşık, resmi sınır değil: NASA boxwork için sayısal bir poligon yayımlamamıştır (data/boxwork/README.md bölüm 7).",
+    "approximate": true,
+    "official_boundary": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       137.2367,
+       -5.0506
+      ],
+      [
+       137.4415,
+       -5.0506
+      ],
+      [
+       137.4415,
+       -4.7193
+      ],
+      [
+       137.2367,
+       -4.7193
+      ],
+      [
+       137.2367,
+       -5.0506
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "name": "HiRISE boxwork belt envelope (ESP_019698_1750 + PSP_001752_1750 footprints)",
+    "kind": "orbital_belt_box",
+    "source": "data/boxwork/README.md bölüm 8.B, Birleştirilmiş HiRISE Boxwork Yamaç Zarfı",
+    "uyari": "Yaklaşık, resmi sınır değil: NASA boxwork için sayısal bir poligon yayımlamamıştır (data/boxwork/README.md bölüm 7).",
+    "approximate": true,
+    "official_boundary": false
+   }
+  }
+ ]
+}

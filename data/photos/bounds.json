@@ -1,0 +1,6 @@
+{
+  "note": "Photographs, not georeferenced rasters. They are not tied to the Gale box; the only georeferenced item is the orbital view PIA26306, which is shown as a picture here, without bounds.",
+  "region": "Gale Crater / Mount Sharp, Mars; boxwork region. See data/mola/bounds.json for the project box",
+  "files": "see photos.csv (source URL, credit, date, original and saved size per image)",
+  "accessed": "2026-11-14"
+}

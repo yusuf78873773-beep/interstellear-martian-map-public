@@ -1,0 +1,11 @@
+{
+  "region": "Gale Crater / Mount Sharp (Aeolis Mons), Mars",
+  "crs": "Mars 2000 sphere (R = 3396190 m), planetocentric latitude, east-positive longitude; same as data/mola/bounds.json",
+  "bounds": { "south": -7.0, "north": -3.5, "west": 136.0, "east": 139.5 },
+  "sharp_detail_box": { "south": -4.86, "north": -4.52, "west": 137.27, "east": 137.61 },
+  "files": {
+    "sharad_tracks.geojson": { "kind": "10 SHARAD ground tracks as LineStrings clipped to bounds, coordinates [lon, lat] degrees (Mars, not WGS84); properties: product_id, orbit, date_utc, radargram_column_first/last, points_in_box, points_in_sharp_detail_box, boxwork_koridoru" },
+    "s_02176201_thm.jpg": { "kind": "radargram preview (browse image) of track s_02176201, 805,970 bytes; image only, not georeferenced to the box" }
+  },
+  "accessed": "2026-11-14"
+}

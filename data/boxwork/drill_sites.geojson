@@ -1,0 +1,92 @@
+{
+ "type": "FeatureCollection",
+ "crs_note": "[longitude east, planetocentric latitude] degrees, Mars 2000 sphere (R = 3396190 m), not WGS84.",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "name": "Altadena",
+    "order": 1,
+    "date_readme": "2025-06-08",
+    "sol_readme": "(README'de sol verilmemiş)",
+    "position_status": "konum doğrulanmadı",
+    "pose_sol": null,
+    "pose_site": null,
+    "pose_drive": null,
+    "elevation_m": null,
+    "note": "README sadece tarih veriyor (8 Haziran 2025); sol tarihten tahmin edilmedi.",
+    "source": "data/boxwork/README.md bölüm 4 (sondaj hedefleri) + data/curiosity-traverse/gale_traverse.csv"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     137.3810354,
+     -4.8078392
+    ]
+   },
+   "properties": {
+    "name": "Valle de la Luna",
+    "order": 2,
+    "date_readme": null,
+    "sol_readme": "4704–4708 civarı",
+    "position_status": "rover pozu: o sol veya öncesindeki son kayıtlı konum",
+    "pose_sol": 4687,
+    "pose_site": 119,
+    "pose_drive": 1722,
+    "elevation_m": -3610.94,
+    "note": "README sol aralığını 'civarı' diye veriyor, tek sondaj sol'ü doğrulanmadı. Konum, 4704 ve 4708 için aynı son poz.",
+    "source": "data/boxwork/README.md bölüm 4 (sondaj hedefleri) + data/curiosity-traverse/gale_traverse.csv"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     137.3810041,
+     -4.8080075
+    ]
+   },
+   "properties": {
+    "name": "Nevado Sajama",
+    "order": 3,
+    "date_readme": "2025-11-13",
+    "sol_readme": "4718",
+    "position_status": "rover pozu: o sol veya öncesindeki son kayıtlı konum",
+    "pose_sol": 4711,
+    "pose_site": 120,
+    "pose_drive": 82,
+    "elevation_m": -3607.98,
+    "note": "",
+    "source": "data/boxwork/README.md bölüm 4 (sondaj hedefleri) + data/curiosity-traverse/gale_traverse.csv"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     137.3809924,
+     -4.8080054
+    ]
+   },
+   "properties": {
+    "name": "Nevado Sajama 2",
+    "order": 4,
+    "date_readme": "2026-02 (Şubat)",
+    "sol_readme": "4795 (Mastcam, yan yana delikler), 4803 (MAHLI, yeni delik duvarı)",
+    "position_status": "rover pozu: o sol veya öncesindeki son kayıtlı konum",
+    "pose_sol": 4789,
+    "pose_site": 120,
+    "pose_drive": 574,
+    "elevation_m": -3607.67,
+    "note": "Sondaj günü README'de açıkça verilmemiş. Konum, 4795 ve 4803 için aynı son poz.",
+    "source": "data/boxwork/README.md bölüm 4 (sondaj hedefleri) + data/curiosity-traverse/gale_traverse.csv"
+   }
+  }
+ ]
+}

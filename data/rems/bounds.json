@@ -1,0 +1,6 @@
+{
+  "note": "Tabular data by sol, not a raster. Location of each measurement is the rover position on that sol (see data/curiosity-traverse).",
+  "region": "Gale Crater / Mount Sharp, Mars; same sols as data/curiosity-rad/rad_daily_dose.csv (minus sol 3588)",
+  "files": { "rems_daily.csv": { "kind": "observation (REMS RMD daily summary)", "rows": 123, "units": "K, Pa, % (local RH), W/m2 (UV_ABC); extra degC columns", "sources": "https://atmos.nmsu.edu/PDS/data/mslrem_1001/ (MSL-M-REMS-5-MODRDR-V1.0)" } },
+  "accessed": "2026-11-14"
+}

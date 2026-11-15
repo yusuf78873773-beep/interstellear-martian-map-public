@@ -1,0 +1,2 @@
+# the root .gitignore ignores "dist"; the built static site must be committed
+!dist/

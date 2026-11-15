@@ -1,0 +1,377 @@
+{
+  "region": "Gale Crater / Mount Sharp (Aeolis Mons), Mars; HiRISE DTM crop around the Curiosity route and the boxwork belt",
+  "crs": "Mars 2000 sphere (R = 3396190 m), planetocentric latitude, east-positive longitude, equirectangular; same grid convention as data/mola/bounds.json",
+  "bounds": {
+    "south": -4.95007,
+    "north": -4.5,
+    "west": 137.24,
+    "east": 137.550106
+  },
+  "region_bounds": {
+    "south": -7,
+    "north": -3.5,
+    "west": 136,
+    "east": 139.5
+  },
+  "bounds_note": "bounds is the crop box (lat -4.95..-4.50, lon 137.24..137.55 requested; snapped to whole pixels). region_bounds is the project box of data/mola/bounds.json. This folder intentionally covers only the sub-box.",
+  "accessed": "2026-11-14",
+  "files": {
+    "gale_hirise_dem_int16le.bin": {
+      "kind": "elevation, int16 little-endian, metres above the Mars 2000 datum (equipotential surface), row-major, first row = north edge",
+      "width": 2271,
+      "height": 3296,
+      "pixels_per_degree": 7323.3118,
+      "metres_per_pixel": 8.094,
+      "bounds": {
+        "south": -4.95007,
+        "north": -4.5,
+        "west": 137.24,
+        "east": 137.550106
+      },
+      "pixel_lat_deg": "-4.5 - (row + 0.5) / 7323.311752",
+      "pixel_lon_deg": "137.24 + (col + 0.5) / 7323.311752",
+      "nodata": -32768,
+      "vertical_rounding": "rounded to whole metres",
+      "merge": "priority merge dtm1..dtm5, first valid wins, NOT blended; elevation steps possible at DTM seams (see dtm_differences)"
+    },
+    "gale_hirise_dem.tif": {
+      "kind": "same grid as the .bin, GeoTIFF int16, same Mars geokeys as data/mola/gale_mola_dem.tif",
+      "width": 2271,
+      "height": 3296,
+      "pixels_per_degree": 7323.3118,
+      "metres_per_pixel": 8.094,
+      "bounds": {
+        "south": -4.95007,
+        "north": -4.5,
+        "west": 137.24,
+        "east": 137.550106
+      },
+      "pixel_lat_deg": "-4.5 - (row + 0.5) / 7323.311752",
+      "pixel_lon_deg": "137.24 + (col + 0.5) / 7323.311752",
+      "nodata": -32768
+    },
+    "gale_hirise_slope_deg_uint8.bin": {
+      "kind": "slope in degrees, uint8, 255 = no data; Horn 3x3 on the ~8.09 m grid, computed inside each DTM and merged by the same priority",
+      "width": 2271,
+      "height": 3296,
+      "pixels_per_degree": 7323.3118,
+      "metres_per_pixel": 8.094,
+      "bounds": {
+        "south": -4.95007,
+        "north": -4.5,
+        "west": 137.24,
+        "east": 137.550106
+      },
+      "pixel_lat_deg": "-4.5 - (row + 0.5) / 7323.311752",
+      "pixel_lon_deg": "137.24 + (col + 0.5) / 7323.311752",
+      "nodata": 255
+    },
+    "gale_hirise_hazard_class_uint8.bin": {
+      "kind": "project-proposal hazard class from the slope: 0 = green (<15 deg), 1 = yellow (15-20 deg), 2 = red (>20 deg), 255 = no data",
+      "width": 2271,
+      "height": 3296,
+      "pixels_per_degree": 7323.3118,
+      "metres_per_pixel": 8.094,
+      "bounds": {
+        "south": -4.95007,
+        "north": -4.5,
+        "west": 137.24,
+        "east": 137.550106
+      },
+      "pixel_lat_deg": "-4.5 - (row + 0.5) / 7323.311752",
+      "pixel_lon_deg": "137.24 + (col + 0.5) / 7323.311752",
+      "nodata": 255,
+      "thresholds_source": "data/slope-hazard/README.md section 2 (project design proposal, not a NASA standard)"
+    },
+    "per_dtm": [
+      {
+        "file": "per_dtm/gale_hirise_dtm1_dem_int16le.bin",
+        "product_id": "DTEEC_019698_1750_019988_1750_U01",
+        "kind": "elevation int16 le (m), this DTM alone, cropped to its valid box, not blended",
+        "width": 872,
+        "height": 1618,
+        "bounds": {
+          "south": -4.95007,
+          "north": -4.729131,
+          "west": 137.312235,
+          "east": 137.431307
+        },
+        "pixels_per_degree": 7323.3118,
+        "metres_per_pixel": 8.094,
+        "nodata": -32768,
+        "bytes": 2821792
+      },
+      {
+        "file": "per_dtm/gale_hirise_dtm2_dem_int16le.bin",
+        "product_id": "DTEEC_009149_1750_009294_1750_U01",
+        "kind": "elevation int16 le (m), this DTM alone, cropped to its valid box, not blended",
+        "width": 844,
+        "height": 1807,
+        "bounds": {
+          "south": -4.923033,
+          "north": -4.676286,
+          "west": 137.353337,
+          "east": 137.468585
+        },
+        "pixels_per_degree": 7323.3118,
+        "metres_per_pixel": 8.094,
+        "nodata": -32768,
+        "bytes": 3050216
+      },
+      {
+        "file": "per_dtm/gale_hirise_dtm3_dem_int16le.bin",
+        "product_id": "DTEEC_040770_1755_039280_1755_U01",
+        "kind": "elevation int16 le (m), this DTM alone, cropped to its valid box, not blended",
+        "width": 787,
+        "height": 1530,
+        "bounds": {
+          "south": -4.792218,
+          "north": -4.583296,
+          "west": 137.335176,
+          "east": 137.442641
+        },
+        "pixels_per_degree": 7323.3118,
+        "metres_per_pixel": 8.094,
+        "nodata": -32768,
+        "bytes": 2408220
+      },
+      {
+        "file": "per_dtm/gale_hirise_dtm4_dem_int16le.bin",
+        "product_id": "DTEEC_023957_1755_024023_1755_U01",
+        "kind": "elevation int16 le (m), this DTM alone, cropped to its valid box, not blended",
+        "width": 773,
+        "height": 1475,
+        "bounds": {
+          "south": -4.701412,
+          "north": -4.5,
+          "west": 137.43909,
+          "east": 137.544644
+        },
+        "pixels_per_degree": 7323.3118,
+        "metres_per_pixel": 8.094,
+        "nodata": -32768,
+        "bytes": 2280350
+      },
+      {
+        "file": "per_dtm/gale_hirise_dtm5_dem_int16le.bin",
+        "product_id": "DTEEC_001488_1750_001752_1750_U02",
+        "kind": "elevation int16 le (m), this DTM alone, cropped to its valid box, not blended",
+        "width": 834,
+        "height": 1671,
+        "bounds": {
+          "south": -4.948841,
+          "north": -4.720665,
+          "west": 137.24,
+          "east": 137.353883
+        },
+        "pixels_per_degree": 7323.3118,
+        "metres_per_pixel": 8.094,
+        "nodata": -32768,
+        "bytes": 2787228
+      }
+    ]
+  },
+  "source": {
+    "dtms": [
+      {
+        "id": "dtm1",
+        "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+        "native_m_per_px": 1.0117,
+        "footprint": {
+          "south": -5.0409621658685,
+          "north": -4.7291119135453,
+          "west": 137.31222149,
+          "east": 137.43897267
+        },
+        "cells_valid": 1124796,
+        "cells_used_in_merge": 1124796
+      },
+      {
+        "id": "dtm2",
+        "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/PSP/ORB_009100_009199/PSP_009149_1750_PSP_009294_1750/DTEEC_009149_1750_009294_1750_U01.IMG",
+        "native_m_per_px": 1.0117,
+        "footprint": {
+          "south": -4.9231148946946,
+          "north": -4.676204001717,
+          "west": 137.35334875,
+          "east": 137.46855246
+        },
+        "cells_valid": 1137134,
+        "cells_used_in_merge": 661736
+      },
+      {
+        "id": "dtm3",
+        "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_040700_040799/ESP_040770_1755_ESP_039280_1755/DTEEC_040770_1755_039280_1755_U01.IMG",
+        "native_m_per_px": 1.0118,
+        "footprint": {
+          "south": -4.792202743651,
+          "north": -4.583317928209,
+          "west": 137.3351821,
+          "east": 137.44270087
+        },
+        "cells_valid": 890471,
+        "cells_used_in_merge": 444106
+      },
+      {
+        "id": "dtm4",
+        "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_023900_023999/ESP_023957_1755_ESP_024023_1755/DTEEC_023957_1755_024023_1755_U01.IMG",
+        "native_m_per_px": 1.0118,
+        "footprint": {
+          "south": -4.7014173711435,
+          "north": -4.4125815075067,
+          "west": 137.42919544,
+          "east": 137.5446516
+        },
+        "cells_valid": 883038,
+        "cells_used_in_merge": 883038
+      },
+      {
+        "id": "dtm5",
+        "url": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/PSP/ORB_001400_001499/PSP_001488_1750_PSP_001752_1750/DTEEC_001488_1750_001752_1750_U02.IMG",
+        "native_m_per_px": 1.0117,
+        "footprint": {
+          "south": -4.9488438128812,
+          "north": -4.7205582307,
+          "west": 137.23895775,
+          "east": 137.35392443
+        },
+        "cells_valid": 1062404,
+        "cells_used_in_merge": 829752
+      }
+    ],
+    "coverage_fraction_of_grid": 0.5268,
+    "elevation_min_m": -4534,
+    "elevation_max_m": -2269
+  },
+  "dtm_differences": {
+    "pair_overlaps": [
+      {
+        "pair": "dtm1-dtm2",
+        "cells": 475398,
+        "area_km2": 31.04,
+        "mean_diff_m": -2.824,
+        "rms_m": 18.26,
+        "median_abs_m": 8.624,
+        "p95_abs_m": 40.378,
+        "max_abs_m": 92.26
+      },
+      {
+        "pair": "dtm1-dtm3",
+        "cells": 156914,
+        "area_km2": 10.25,
+        "mean_diff_m": 4.831,
+        "rms_m": 14.048,
+        "median_abs_m": 7.466,
+        "p95_abs_m": 29.86,
+        "max_abs_m": 78.58
+      },
+      {
+        "pair": "dtm1-dtm5",
+        "cells": 232652,
+        "area_km2": 15.19,
+        "mean_diff_m": -5.551,
+        "rms_m": 11.812,
+        "median_abs_m": 5.777,
+        "p95_abs_m": 26.68,
+        "max_abs_m": 65.49
+      },
+      {
+        "pair": "dtm2-dtm3",
+        "cells": 429567,
+        "area_km2": 28.05,
+        "mean_diff_m": 4.33,
+        "rms_m": 19.787,
+        "median_abs_m": 7.592,
+        "p95_abs_m": 43.641,
+        "max_abs_m": 113.36
+      }
+    ],
+    "horizontal_shift_test": [
+      {
+        "pair": "dtm1-dtm2",
+        "rms_at_zero_m": 18.26,
+        "best_shift_m": [
+          -49,
+          8
+        ],
+        "rms_best_m": 10.03
+      },
+      {
+        "pair": "dtm1-dtm3",
+        "rms_at_zero_m": 14.04,
+        "best_shift_m": [
+          49,
+          24
+        ],
+        "rms_best_m": 8.06
+      },
+      {
+        "pair": "dtm2-dtm3",
+        "rms_at_zero_m": 19.79,
+        "best_shift_m": [
+          49,
+          24
+        ],
+        "rms_best_m": 16.2
+      },
+      {
+        "pair": "dtm1-dtm5",
+        "rms_at_zero_m": 11.81,
+        "best_shift_m": [
+          -49,
+          8
+        ],
+        "rms_best_m": 3.63
+      }
+    ],
+    "shift_test_note": "search window was +/-6 cells (+/-49 m); best shifts reached the window edge, so true offsets may be larger",
+    "vs_mola_dtm_minus_mola_m": {
+      "dtm1": {
+        "n": 317,
+        "median": 38.7,
+        "p5": 4.5,
+        "p95": 87.6
+      },
+      "dtm2": {
+        "n": 327,
+        "median": 43.9,
+        "p5": 0.7,
+        "p95": 106.8
+      },
+      "dtm3": {
+        "n": 251,
+        "median": 6.2,
+        "p5": -8.4,
+        "p95": 75.5
+      },
+      "dtm4": {
+        "n": 251,
+        "median": 0.7,
+        "p5": -13.8,
+        "p95": 57
+      },
+      "dtm5": {
+        "n": 303,
+        "median": 26.3,
+        "p5": -8.3,
+        "p95": 95.3
+      }
+    }
+  },
+  "slope": {
+    "valid_cells": 3929118,
+    "p50": 6.9240875244140625,
+    "p95": 30.026100158691406,
+    "max": 73.6441650390625
+  },
+  "hazard_cells": {
+    "green": 3135146,
+    "yellow": 286665,
+    "red": 507307
+  },
+  "hazard_fraction_of_valid_slope": {
+    "green": 0.7979,
+    "yellow": 0.073,
+    "red": 0.1291
+  }
+}
